@@ -1,0 +1,16 @@
+
+public Class ContaBancaria {
+
+	private  String nomeCliente;
+	private int numConta;
+	private double saldo;
+	 
+	
+	//o saldo não pode ficar negativo
+	public void sacar() {
+		
+	}
+	public void depositar() {
+		
+	}
+}

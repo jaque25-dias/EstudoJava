@@ -1,0 +1,8 @@
+
+public class Bebida extends Item {
+	
+	
+	private int peso;
+	private int Volume;
+	public boolean bebidaalcoolica;
+}

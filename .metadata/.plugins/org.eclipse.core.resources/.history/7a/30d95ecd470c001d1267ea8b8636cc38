@@ -1,0 +1,27 @@
+
+public class TestaRestaurante {
+
+public static void main(String[] args) {
+	{
+		
+		int numero = 10;
+		Pedido PedidodoCliente = new Pedido();
+		
+		System.out.println("Informe seu nome para realizar o pedido: ");
+        String nome = leia.nextline();
+
+        System.out.println("Digite o número do seu cargo: ");
+        System.out.println("Lanche");
+        System.out.println("Bebida");
+        System.out.println("3-Taxa de serviço");
+        int pedido = leia.nextInt();
+
+        System.out.println("Informe seu pedido: ");
+        double preco = leia.nextDouble();
+
+        leia.close();
+		
+	}
+	
+}
+}

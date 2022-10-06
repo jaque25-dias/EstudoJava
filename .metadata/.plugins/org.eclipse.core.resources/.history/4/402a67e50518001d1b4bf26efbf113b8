@@ -1,0 +1,33 @@
+
+public abstract class Conta {
+
+    private static int contadorDeContas = 1; //Criar conta em ordem crescente
+	private int numeroConta;
+	private Cliente cliente;
+	private Double saldo= 0;
+
+   
+	
+
+	public Conta(Cliente cliente) {
+		this.numeroConta = contadorDecontas;
+		this.cliente = cliente;
+	}
+
+
+
+
+	public void sacar(double valorPoupanca){
+		System.out.println("Realizando um saque ");
+		System.out.println("Saldo anterior "+this.saldo);
+		
+		//Se o tiver dinheiro na conta
+		if(saldo <= this.saldo) {		
+			this.saldo -= saldo;
+			System.out.println("Saldo posterior "+this.saldo);
+			System.out.println("Saque realizado com sucesso!!! ");
+		}else { //caso não tenha dinheiro
+			System.out.println("Saldo insuficiente");
+	}  
+	}
+}

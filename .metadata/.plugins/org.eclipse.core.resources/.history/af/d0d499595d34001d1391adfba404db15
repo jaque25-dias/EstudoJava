@@ -1,0 +1,11 @@
+
+public class Urso extends Mamifero{
+
+	public Urso() {
+		super.setCor("castanho");
+		super.setAlimento("Mel");
+	}
+	public Mamifero(String nome, String comprimento, int nPatas, String cor, String habitat, double velocidade,
+			String habitat2) 
+	
+}

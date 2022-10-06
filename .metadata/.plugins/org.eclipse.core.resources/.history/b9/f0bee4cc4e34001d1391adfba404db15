@@ -1,0 +1,11 @@
+
+public  class abstract Animal {
+
+	String nome = "";
+	int comprimento = 4;
+	int nPatas=4;
+    String cor = "";
+	String habitat = "";
+    double velocidade = 0;	
+	
+}

@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class TesteJardimZoo {
+
+	public static void main(String[] args) {
+	
+	Scanner leia= new Scanner(System.in);
+	
+	int escolha=0;
+	System.out.println("~~~~~~~~~~Jardim Zoo~~~~~~~~~~");
+	System.out.println("Escolha um animal para saber um POUCO MAIS (1)CAMELO (2)TUBARAO (3)URSO-DO-CANADÁ" );
+	escolha=leia.nextInt();
+	
+	switch (escolha) {
+	case 01:
+	   
+		System.out.println("Animal: ");
+		String nome=leia.nextLine();
+		leia.next();
+		System.out.println("Comprimento: ");
+		int comprimento=leia.nextInt();
+		leia.next();
+		System.out.println("Patas: ");
+		int patas=leia.nextInt();
+		leia.nextInt();
+		System.out.println("Cor: ");
+		String cor=leia.next();
+		System.out.println("Habitat: ");
+		String habitat=leia.next();
+		leia.next();
+		System.out.println("Velocidade: ");
+		int velocidade=leia.nextInt();
+		leia.next();
+		break;
+		
+    case 02:
+		
+		break;
+    case 03:
+		
+		break;
+
+	default:
+		break;
+	}
+		
+		
+	}
+
+}

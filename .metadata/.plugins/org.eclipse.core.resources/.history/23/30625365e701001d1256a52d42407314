@@ -1,0 +1,21 @@
+public class TestaBanco {
+
+	public static void main(String[] args) {
+		Cliente Jaqueline = new Cliente();
+		Jaqueline.nome = "Jaqueline";
+		Jaqueline.cpf = "000.111.222-33";
+		Jaqueline.profissao = "Programadora";
+
+		Conta contaDeJack = new Conta();
+		contaDeJack.deposita(1000);
+		contaDeJack.saldo = (100);
+		contaDeJack.agencia = (2034);
+		contaDeJack.numero = (4);
+
+		contaDeJack.titular = Jaqueline;
+		System.out.println("Olá " + contaDeJack.titular.nome);
+		System.out.println(" O saldo da sua conta é " + contaDeJack.saldo);
+		System.out.println("Sua agência é " + contaDeJack.agencia);
+		System.out.println(" Sua conta é número " + contaDeJack.numero);
+	}
+}

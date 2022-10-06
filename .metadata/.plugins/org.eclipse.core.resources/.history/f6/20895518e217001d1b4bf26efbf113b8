@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public abstract class Conta {
+
+    private static int contadorDeContas = 0;
+	private int numeroAgencia = 0001;
+	private int numeroConta;
+	private int dataAbertura;
+	private Cliente cliente;//Fiz um import da classe Cliente
+	private Double saldo= 0.00;
+
+    
+    private ArrayList<Conta> ContaBancaria = new ArrayList<Conta>();
+
+    public Conta(Cliente cliente) {
+		
+		contadorDeContas +=1;
+		this.numeroConta = contadorDeContas; 
+		this.cliente = cliente;
+    }
+    
+    public void sacar(double valorPoupanca){
+		System.out.println("Realizando um saque ");
+		System.out.println("Saldo anterior "+this.saldo);
+		
+		//Se o tiver dinheiro na conta
+		if(valorPoupanca <= this.saldo) {		
+			this.saldo -= valorPoupanca;
+			System.out.println("Saldo posterior "+this.saldo);
+			System.out.println("Saque realizado com sucesso!!! ");
+		}else { //caso não tenha dinheiro
+			System.out.println("Saldo insuficiente");
+	}
+    
+    
+    
+	}
+	
+}

@@ -1,0 +1,137 @@
+//Contas bancárias:
+//  - Atributos: Toda conta tem um número e uma agência.
+//    (OBS: Não são os únicos atributos).
+//  - 
+//Saque: Remover uma quantia específica do saldo da conta
+//  - Depósito: Adicionar uma quantia específica no saldo da conta
+//  - Calcular rendimentos da conta: 
+//    - Por mês, a conta rende 5% do saldo. Mostrar a prévia do
+//      rendimento ao usuário
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class TesteRosanaEJackBank {
+
+	public static void main(String[] args) {
+    
+    private ArrayList<Conta> ContaBancaria = new ArrayList<Conta>();
+    Scanner leia = new Scanner(System.in);
+    
+	public void paginaInicial() {
+		
+		int opcao;
+		
+		do {	
+		System.out.println(" Seja bem vindo ao JsBank.Escolha uma das opções para iniciar o atendimento");
+		System.out.println("1 - Criar uma conta");
+		System.out.println("2 - Saque ");
+		System.out.println("3 - Depósito ");
+		System.out.println("4 - Realizar PIX ");
+		System.out.println("5 - Extrato ");
+	    System.out.println("0 - Sair ");
+	    System.out.println("Opção inválida ");
+	    opcao= leia.nextInt();
+	    leia.next();  
+        
+        switch (opcao) {
+    	case 1:
+    	System.out.println("Digite o nome do Titular da conta para Abrir a conta ");
+    	String nomeTitular = leia.nextLine();
+      	rosanaJackBank.add(contaPoupanca);
+    
+      	System.out.println("Nome do Titular: ");
+        String titular= leia.nextLine();
+        
+        System.out.println("Digite seu CPF: ");
+        int cpf= leia.nextInt();
+        
+        System.out.println("Qual número da sua Agência? ");
+        int numeroAgencia = leia.nextInt();
+        
+        SistemaDoBanco rosanaJackBank = new SistemaDoBanco (numeroAgencia);
+        
+        rosanaJackBank.adicionarConta(Conta conta);
+       
+     	break;
+        
+    	case 2:
+        	if(saque<3){
+                System.out.print("Quanto deseja sacar da conta: ");
+                valor = leia.nextDouble();
+
+    	double saque(valor);
+            }else
+
+    	{
+    		System.out.println("O limite de saques diários foi atingido.\n");
+    	}System.out.println();break;
+
+    	novoSaque
+
+    	case 3:
+
+    	System.out.println("Qual o valor deseja depositar ? ");valor=leia.nextDouble();
+    	deposito(valor);
+    		break;
+        
+    	case 4:
+    		System.out.println("\tExtrato da conta ");
+    		System.out.println("Aqui está o Extrato da sua conta " + this.titular);
+    		System.out.println("O número da conta: " + this.numeroCorrente);
+    		System.out.println("Saldo da conta : " + this.saldo);
+    		LocalDateTime ldtNow = LocalDateTime.now();
+    		System.out.println(ldtNow);
+    		break;	
+    	case 5:
+    		System.out.println("O serviço foi encerrado pelo cliente. Obrigado por usar nosso Banco !!!");
+    		break;
+    		
+    	default:
+    		break;	
+    	}
+
+    	{
+    		System.out.println("Saldo insuficiente.Refaça a transação ");
+    	}
+		
+	    public void depositar(double valorPoupanca){
+			System.out.println("Realizando um depósito ");
+			System.out.println("Saldo anterior "+this.saldo);
+			
+			this.saldo += valorPoupanca;
+			System.out.println("Saldo posterior "+ this.saldo);
+			System.out.println("Depósito realizado com sucesso!!! ");
+		}
+		
+		
+		}
+		public void rendimentos(double valorRendimento){
+			
+			//Rendimentos na conta poupança
+			valorRendimento = (0.05 * this.saldo) / 12;
+			
+			    System.out.println("Sua conta Poupança rendeu 5%" +valorRendimento);
+				System.out.println("Saldo posterior " + valorRendimento);
+			}
+		public void extrato() {
+			System.out.println("\tExtrato da conta ");
+			System.out.println("Aqui está o Extrato da sua conta " + this.titular);
+			System.out.println("O número da conta: " + this.numeroCorrente);
+			System.out.println("Saldo da conta : " + this.saldo);
+			LocalDateTime ldtNow = LocalDateTime.now();
+			System.out.println(ldtNow);
+		}
+
+		public void sacar(double valor) {
+			if (saldo >= valor)
+				saldo -= valor;
+			saldo++;
+			System.out.println("O valor sacaddo foi : " + valor);
+			System.out.println("O novo saldo é : " + saldo + "\n");
+			
+			
+		}leia.close();
+	}while(opcao!=4);}
+}

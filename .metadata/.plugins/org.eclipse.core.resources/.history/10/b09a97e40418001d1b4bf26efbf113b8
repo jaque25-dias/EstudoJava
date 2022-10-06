@@ -1,0 +1,79 @@
+
+public abstract class Conta {
+
+    private static int contadorDeContas = 0;
+	private int numeroAgencia = 0001;
+	private int numeroConta;
+	private int dataAbertura;
+	private Cliente cliente;//Fiz um import da classe Cliente
+	private Double saldo= 0.00;
+
+    public Conta(Cliente) {
+		this.numeroAgencia = numeroAgencia;
+		this.numeroConta = numeroConta;
+		this.dataAbertura = dataAbertura;
+		this.cliente = cliente;
+		this.saldo = saldo;
+	}
+
+	public Conta(Cliente cliente) {
+		
+		contadorDeContas +=1;
+		this.numeroConta = contadorDeContas; 
+		this.cliente = cliente;
+    }
+    
+    public int getNumeroAgencia() {
+		return numeroAgencia;
+	}
+
+	public void setNumeroAgencia(int numeroAgencia) {
+		this.numeroAgencia = numeroAgencia;
+	}
+
+	public int getNumeroConta() {
+		return numeroConta;
+	}
+
+	public void setNumeroConta(int numeroConta) {
+		this.numeroConta = numeroConta;
+	}
+
+	public int getDataAbertura() {
+		return dataAbertura;
+	}
+
+	public void setDataAbertura(int dataAbertura) {
+		this.dataAbertura = dataAbertura;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
+
+	public void sacar(double valorPoupanca){
+		System.out.println("Realizando um saque ");
+		System.out.println("Saldo anterior "+this.saldo);
+		
+		//Se o tiver dinheiro na conta
+		if(saldo <= this.saldo) {		
+			this.saldo -= saldo;
+			System.out.println("Saldo posterior "+this.saldo);
+			System.out.println("Saque realizado com sucesso!!! ");
+		}else { //caso não tenha dinheiro
+			System.out.println("Saldo insuficiente");
+	}  
+	}
+}

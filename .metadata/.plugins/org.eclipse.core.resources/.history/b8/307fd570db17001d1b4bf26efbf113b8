@@ -1,0 +1,32 @@
+
+import java.util.ArrayList;
+
+public class Cliente{
+	
+	private int numeroAgencia=002;
+	private int cpf;
+	private String titular;
+	private int numeroCelular
+	
+	
+    private ArrayList<Conta> ContaBancaria = new ArrayList<Conta>();
+    
+    public Cliente(int numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+    }
+
+
+    public void adicionarConta(Conta conta) {
+        this.adicionarConta(conta);
+   
+    }
+
+    public int getNumeroAgencia() {
+        return numeroAgencia;
+    }
+
+    public void setNumeroAgencia(int numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+
+    }
+	}

@@ -1,0 +1,12 @@
+
+public class ContaPoupanca extends ContaBancaria {
+	 
+	private int diaRendimento;
+	 
+	 //recebe taxa de rendimento da poupaça e calcula um novo saldo
+	
+	 
+	 public double calcularNovoSaldo(){
+		 
+	 }
+}

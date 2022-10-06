@@ -1,0 +1,42 @@
+import br.com.cit.bootcamp.aula02Enum.RegraDeCalculo;
+
+public class Pedido {
+
+	
+	private arraylist nomecliente;
+	private boolean itensconsumidos;
+	private double taxadeservico;
+	
+	carpadio(itensconsumidos taxadeservico)
+	{
+		this.regra = regra;
+	}
+	
+	public RegraDeCalculo getRegra()
+	{
+		return regra;
+	}
+}
+	
+	
+	public arraylist getNomecliente() {
+		return nomecliente;
+	}
+	public void setNomecliente(arraylist nomecliente) {
+		this.nomecliente = nomecliente;
+	}
+	public boolean isItensconsumidos() {
+		return itensconsumidos;
+	}
+	public void setItensconsumidos(boolean itensconsumidos) {
+		this.itensconsumidos = itensconsumidos;
+	}
+	public double getTaxadeserviço() {
+		return taxadeserviço;
+	}
+	public void setTaxadeserviço(double taxadeserviço) {
+		this.taxadeserviço = taxadeserviço;
+	}
+	
+	
+}

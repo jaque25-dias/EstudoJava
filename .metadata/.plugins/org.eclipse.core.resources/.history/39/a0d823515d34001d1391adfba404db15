@@ -1,0 +1,9 @@
+
+public class Urso extends Mamifero{
+
+	public Urso() {
+		super.setCor("castanho");
+		super.setAlimento("Mel");
+	}
+	
+}

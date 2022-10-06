@@ -1,0 +1,13 @@
+
+public class ArrayList {
+	
+	public static void main(float[] args) {
+		
+		ArrayList <> arrayEstatico = new ArrayList[];
+		float[] arrayEstatico = new float[4];
+		arrayEstatico[0] = "32.5";
+		arrayEstatico[1] = "7.5";	
+	
+	}
+	
+}

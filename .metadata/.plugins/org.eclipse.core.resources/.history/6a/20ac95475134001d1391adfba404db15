@@ -1,0 +1,26 @@
+
+public class Urso extends Mamifero{
+
+	
+	String cor="castanho";
+	String alimento= "mel";
+	
+	public Urso(String habitat, String cor, String alimento) {
+		super(habitat);
+		this.cor = cor;
+		this.alimento = alimento;
+	}
+	public String getCor() {
+		return cor;
+	}
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	public String getAlimento() {
+		return alimento;
+	}
+	public void setAlimento(String alimento) {
+		this.alimento = alimento;
+	}
+	
+}

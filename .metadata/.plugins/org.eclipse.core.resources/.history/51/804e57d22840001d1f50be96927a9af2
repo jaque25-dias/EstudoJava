@@ -1,0 +1,21 @@
+package br.com.alura.forum.config.validacao;
+
+@RestControllerAdvice
+public class ErroDeValidacaoHandler {
+
+    @Autowired
+        private MessageSource messageSource;
+
+        @ResponseStatus(code = HttpStatus.BAD_REQUEST)
+        @ExceptionHandler(MethodArgumentNotValidException.class)
+        public List<ErroDeFormularioDto> dto = new ArrayList<>();
+
+        List<FiledError> fieldErrors = exception.getBindingResult().getFieldErrors():
+        fieldErrors.forEach(e -> {
+           String mensagem =
+             ErroDeFormularioDto erro = new ErroDeFormularioDto(e.getField(), mensagem);
+      });
+
+        return dto;
+    }
+}

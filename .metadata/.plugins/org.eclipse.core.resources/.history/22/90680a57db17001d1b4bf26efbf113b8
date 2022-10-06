@@ -1,0 +1,27 @@
+
+import java.util.ArrayList;
+
+public class Cliente{
+	
+	private int numeroAgencia;
+    private ArrayList<Conta> ContaBancaria = new ArrayList<Conta>();
+    
+    public SistemaDoBanco(int numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+    }
+
+
+    public void adicionarConta(Conta conta) {
+        this.adicionarConta(conta);
+   
+    }
+
+    public int getNumeroAgencia() {
+        return numeroAgencia;
+    }
+
+    public void setNumeroAgencia(int numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+
+    }
+	}

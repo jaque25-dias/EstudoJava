@@ -1,0 +1,8 @@
+
+public class ContaBancaria {
+
+	private nomeCliente;
+	private numConta;
+	private saldo;
+	
+}

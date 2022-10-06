@@ -1,0 +1,24 @@
+package Aplicacao;
+
+import java.util.Scanner;
+
+public class TesteBank {
+ 
+	public static void main(String[] args) {
+		Scanner leia= new Scanner(System.in);
+		
+	int paginaInicial;
+		
+	public void paginaInicial() {
+		
+	}
+		
+		
+		
+		
+		
+		
+		
+		leia.close();	
+	}	
+}

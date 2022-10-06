@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;bootcamp-pcds-backend-mvc-maven&apos;" deleteContents="false" description="Delete resource &apos;bootcamp-pcds-backend-mvc-maven&apos;" element1="/bootcamp-pcds-backend-mvc-maven" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1664807687482"/>&#x0A;<refactoring comment="Delete resource &apos;bootcamp-pcds-backend-mvc-maven&apos;" deleteContents="true" description="Delete resource &apos;bootcamp-pcds-backend-mvc-maven&apos;" element1="/bootcamp-pcds-backend-mvc-maven" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1664808020493"/>
+</session>

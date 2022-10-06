@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+
+public abstract class Conta {
+
+    private static int contadorDeContas = 0;
+	private int numeroAgencia = 0001;
+	private int numeroConta;
+	private Cliente cliente;//Fiz um import da classe Cliente
+	private Double saldoInicial = 50.00;
+
+    
+    private ArrayList<Conta> ContaBancaria = new ArrayList<Conta>();
+
+	
+	public Conta(int cpf, String titular) {
+		this.cpf = cpf;
+		this.titular = titular;
+					
+	}
+	public int getCpf() {
+		return cpf;
+	}
+	public void setCpf(int cpf) {
+		this.cpf = cpf;
+	}
+	public String getTitular() {
+		return titular;
+	}
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+	
+}

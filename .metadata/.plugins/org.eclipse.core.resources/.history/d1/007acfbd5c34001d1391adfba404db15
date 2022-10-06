@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class TesteJardimZoo {
+
+	public static void main(String[] args) {
+	
+	Scanner leia= new Scanner(System.in);
+	
+	int escolha=0;
+	System.out.println("~~~~~~~~~~~~~~~~~~~~Jardim Zoo~~~~~~~~~~~~~~~~~~~~~~");
+	System.out.println("Escolha um animal para saber um POUCO MAIS (1)CAMELO (2)TUBARAO (3)URSO-DO-CANADÁ" );
+	escolha=leia.nextInt();
+	
+	switch (escolha) {
+	case 01:
+		Mamifero camelo= new Mamifero();
+		camelo.setNome("Camelo");
+		camelo.setComprimento("3mts");
+		camelo.setCor("Marrom");
+		camelo.setVelocidade(2.0);
+		
+		break;
+		
+    case 02:
+    	Peixe tubarao = new Peixe();
+    	tubarao.setNome("Tubarão");
+    	tubarao.setComprimento("3mts");
+    	tubarao.setVelocidade(2.0);
+    		
+		break;
+    case 03:
+		Urso ursocanada = new Urso();
+		
+		break;
+
+	default:
+		break;
+	}
+		
+		
+	}
+
+}

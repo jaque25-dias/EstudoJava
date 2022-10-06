@@ -1,0 +1,18 @@
+
+public class Mamifero extends Animal {
+
+	public String alimento;
+	
+ 
+  public Mamifero(String nome, String comprimento, int nPatas, String cor, String habitat, double velocidade,
+			String alimento) {
+		super(nome, comprimento, nPatas, cor, habitat, velocidade);
+		this.alimento = alimento;
+	}
+
+public Mamifero() {
+	 super.setHabitat("Terrestre");
+ }
+	
+	
+}
